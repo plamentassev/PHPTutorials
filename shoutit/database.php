@@ -1,6 +1,11 @@
 <?php
 //Connect to the database
-$con = mysqli_connect("localhost", "root", "start123", "shoutit");
+$host = "localhost";
+$user = "root";
+$password = "start123";
+$db = "shoutit";
+
+$con = mysqli_connect($host, $user, $password , $db);
 
 //Test Connection
 if(mysqli_connect_errno()){
